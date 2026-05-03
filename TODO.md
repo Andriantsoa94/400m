@@ -13,7 +13,8 @@ Structure : [ { "nom": "...", "vitesseMax": 200, "acceleration": 25.0 }, ... ]
 PHASE 2 : INTERFACE GRAPHIQUE (UI)
 ==================================================
 -   [x] MainFrame.java : Layout BorderLayout.
--   [ ] DashPanel.java (Haut) : Labels Chrono, Vitesse, Distance + JComboBox (Selection voiture).
+-   [x] DashPanel.java (Haut) : Labels Chrono, Vitesse, Distance + JComboBox (Selection voiture).
+-   [ ] Speedometer.java
 -   [ ] TrackPanel.java (Centre) : Zone de dessin (paintComponent).
 -   [ ] Dessiner Route, Ligne Depart (50px), Ligne Arrivee (Largeur-50px).
 -   [ ] Panneau Controle (Bas) : Bouton START + Bouton ACCELERER (MouseListener).
