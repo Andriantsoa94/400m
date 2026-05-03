@@ -2,13 +2,13 @@ package model;
 
 public class Voiture {
     private String nom;
-    private Float vitesseMax;
-    private Float acceleration;
+    private double vitesseMax;
+    private double acceleration;
 
     public Voiture() {
     }
 
-    public Voiture(String nom, Float vitesseMax, Float acceleration) {
+    public Voiture(String nom, double vitesseMax, double acceleration) {
         this.nom = nom;
         this.vitesseMax = vitesseMax;
         this.acceleration = acceleration;
@@ -22,19 +22,19 @@ public class Voiture {
         this.nom = nom;
     }
 
-    public Float getVitesseMax() {
+    public double getVitesseMax() {
         return vitesseMax;
     }
 
-    public void setVitesseMax(Float vitesseMax) {
+    public void setVitesseMax(double vitesseMax) {
         this.vitesseMax = vitesseMax;
     }
 
-    public Float getAcceleration() {
+    public double getAcceleration() {
         return acceleration;
     }
 
-    public void setAcceleration(Float acceleration) {
+    public void setAcceleration(double acceleration) {
         this.acceleration = acceleration;
     }
 }

@@ -7,7 +7,7 @@ PHASE 1 : PREPARATION DES DONNEES & MODELE
 -   [x] Creer le fichier 'data/voitures.json'.
 Structure : [ { "nom": "...", "vitesseMax": 200, "acceleration": 25.0 }, ... ]
 -   [x] Creer la classe Voiture.java (String nom, double vitesseMax, double acceleration).
--   [ ] Creer JsonService.java pour charger la liste des voitures.
+-   [x] Creer JsonService.java pour charger la liste des voitures.
 
 ==================================================
 PHASE 2 : INTERFACE GRAPHIQUE (UI)
