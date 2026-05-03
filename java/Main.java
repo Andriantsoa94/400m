@@ -10,11 +10,11 @@ public class Main {
         String path = "data/Voitures.json";
 
         JsonService jserv = new JsonService();
-        MainFrame main = new MainFrame();
-
-        main.setVisible(true);
 
         List<Voiture> vtr = jserv.chargerVoiture(path);
+
+        MainFrame main = new MainFrame(vtr);
+        main.setVisible(true);
 
         for (Voiture voiture : vtr) {
             System.out.println(voiture.getNom() + " "+ voiture.getAcceleration() + " " + voiture.getVitesseMax());

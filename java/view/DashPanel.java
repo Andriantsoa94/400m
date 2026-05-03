@@ -16,7 +16,7 @@ public class DashPanel extends JPanel{
         setLayout(new GridLayout(0, 1, 10, 10));
 
         for (Voiture vtr : voitures) {
-            JRadioButton rb = new JRadioButton(vtr.getNom());
+            JRadioButton rb = new JRadioButton(vtr.getNom() + " VMax "+ vtr.getVitesseMax() + " Acceleration " +vtr.getAcceleration());
             group.add(rb);
             this.add(rb);
             btnVtr.add(rb);
