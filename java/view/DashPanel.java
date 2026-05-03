@@ -33,6 +33,7 @@ public class DashPanel extends JPanel{
                 return i;
             }
         }
+
         return 0;
     }
 }
