@@ -1,5 +1,6 @@
 import model.Voiture;
 import service.JsonService;
+import view.MainFrame;
 
 import java.io.IOException;
 import java.util.List;
@@ -9,6 +10,9 @@ public class Main {
         String path = "data/Voitures.json";
 
         JsonService jserv = new JsonService();
+        MainFrame main = new MainFrame();
+
+        main.setVisible(true);
 
         List<Voiture> vtr = jserv.chargerVoiture(path);
 
