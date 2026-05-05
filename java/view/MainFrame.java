@@ -8,6 +8,7 @@ import java.util.List;
 
 public class MainFrame extends JFrame {
     private DashPanel dash;
+    private SpeedPanel speed;
 
     public MainFrame (List<Voiture> vtr) {
 
@@ -18,11 +19,14 @@ public class MainFrame extends JFrame {
         DashPanel dash = new DashPanel(vtr);
         setLayout(new BorderLayout());
 
+        speed = new SpeedPanel();
+        setLayout(new BorderLayout());
+
         JButton start = new JButton("Accelerer");
-        JPanel track = new JPanel();
+        // JPanel track = new JPanel();
 
         this.add(dash , BorderLayout.NORTH);
-        this.add(track ,BorderLayout.CENTER);
+        this.add(speed );
         this.add(start , BorderLayout.SOUTH);
 
         setVisible(true);

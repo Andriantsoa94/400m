@@ -3,7 +3,6 @@ package view;
 import model.Voiture;
 
 import javax.swing.*;
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +12,6 @@ public class DashPanel extends JPanel{
 
     public DashPanel (List<Voiture> voitures) {
         setBorder(BorderFactory.createTitledBorder("Select a Car"));
-        setLayout(new GridLayout(0, 1, 10, 10));
 
         for (Voiture vtr : voitures) {
             JRadioButton rb = new JRadioButton(vtr.getNom() + " VMax "+ vtr.getVitesseMax() + " Acceleration " +vtr.getAcceleration());
